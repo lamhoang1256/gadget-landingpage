@@ -1,0 +1,60 @@
+.discount {
+  margin-top: 125px;
+  min-height: 427px;
+  &-container {
+    position: relative;
+    background: $bg-discount-gradient;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 767.98px) {
+      flex-direction: column-reverse;
+      padding: 0 20px;
+    }
+  }
+  &-content {
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media screen and (max-width: 767.98px) {
+      margin-left: 0;
+      transform: translateY(-40.35%);
+    }
+  }
+  &-image {
+    max-height: 427px;
+    transform: translateY(-40.35%);
+    // @media screen and (max-width: 1023.98px) {
+    //   transform: none;
+    // }
+    &::before {
+      content: "DRONE";
+      font-size: 19rem;
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.09);
+      position: absolute;
+      top: 50%;
+      right: 0;
+      height: 100%;
+      transform: translateY(9.65%);
+      z-index: -9;
+      @media screen and (max-width: 1023.98px) {
+        display: none;
+      }
+    }
+    // img {
+    //   margin-left: 50px;
+    // }
+  }
+  .countdown {
+    font-size: 4.2rem;
+    font-weight: 600;
+    max-width: 35rem;
+    text-align: center;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 0;
+  }
+}

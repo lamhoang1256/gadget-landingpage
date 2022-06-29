@@ -1,0 +1,72 @@
+.footer {
+  background-color: $bg-footer;
+  margin-top: -110px;
+  padding-top: 110px;
+  @media screen and (max-width: 767.98px) {
+    padding-top: 220px;
+    padding-bottom: 110px;
+  }
+  &-container {
+    display: flex;
+    min-height: 430px;
+    align-items: center;
+  }
+  &-list {
+    width: 100%;
+    display: flex;
+    gap: 40px 0;
+    @media screen and (max-width: 767.98px) {
+      flex-wrap: wrap;
+    }
+  }
+  &-box {
+    flex-basis: 25%;
+    padding: 0 10px;
+    @media screen and (max-width: 767.98px) {
+      flex-basis: 100%;
+    }
+  }
+  &-copyright {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-top: 28px;
+  }
+  .menu {
+    margin-top: 30px;
+    &-item {
+      padding: 6px 0;
+      &:hover {
+        .menu-link {
+          color: $pink-light;
+          border-bottom: 1px solid $pink-light;
+        }
+      }
+    }
+    &-link {
+      font-size: 1.6rem;
+      color: $gray-light;
+      transition: all 0.3s linear;
+    }
+  }
+  .menu-follow {
+    display: flex;
+    gap: 0 10px;
+    .menu-item {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #182240;
+      transition: all 0.25s linear;
+      &:hover {
+        background: $pink-light;
+        .menu-link {
+          color: #fff;
+          border: none;
+        }
+      }
+    }
+  }
+}

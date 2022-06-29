@@ -1,0 +1,29 @@
+.btn {
+  height: 5.3rem;
+  padding: 0 4rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 30px;
+  border: none;
+  transition: all 0.25s linear;
+  &--outline {
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+  &--primary {
+    color: #fff;
+    background: $gradient-main;
+  }
+  &--orange {
+    color: #fff;
+    background: $orange-light;
+  }
+  &--white {
+    color: $pink-light;
+  }
+}

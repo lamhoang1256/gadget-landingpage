@@ -1,0 +1,24 @@
+.brand {
+  padding: 120px 0;
+  &-heading {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.8rem;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 55px 5%;
+    margin-top: 80px;
+  }
+  &-item {
+    flex-basis: 16%;
+    opacity: 0.6;
+    transition: all 0.25s linear;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

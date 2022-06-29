@@ -1,0 +1,18 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1202px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+// Beautiful Dracula Darker - SASS
+@mixin opacity($opacity: 1) {
+  visibility: visible;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity = $opacity-ie);
+}

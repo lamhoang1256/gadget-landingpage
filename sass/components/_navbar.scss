@@ -1,0 +1,121 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 110px;
+  width: 100%;
+  z-index: 50;
+  transition: height 0.25s linear;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    position: relative;
+  }
+  &-right {
+    display: flex;
+    gap: 0 40px;
+    .menu {
+      display: flex;
+      gap: 0 50px;
+      transition: all 0.3s linear;
+      &.show {
+        transform: translateX(0);
+      }
+      @media screen and (max-width: 767.98px) {
+        position: fixed;
+        z-index: 50;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100vh;
+        padding-top: 50px;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        .navbar-toggle-close {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          color: #000;
+          font-size: 3rem;
+        }
+      }
+      &-link {
+        color: $white;
+        font-weight: 500;
+        font-size: 1.5rem;
+        transition: all 0.25s linear;
+        @media screen and (max-width: 767.98px) {
+          color: #000;
+          font-size: 2rem;
+          display: block;
+          padding: 20px 0;
+        }
+      }
+      &-item:hover {
+        .menu-link {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  &-action {
+    display: flex;
+    align-items: center;
+  }
+  &-icon {
+    color: $white;
+    font-size: 2.2rem;
+    display: block;
+    position: relative;
+    padding: 0px 10px 0;
+    cursor: pointer;
+    &-bag::after {
+      content: "1";
+      font-size: 10px;
+      position: absolute;
+      top: 0;
+      right: 5px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: $black;
+      color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &-toggle-open,
+  &-toggle-close {
+    display: none;
+    @media screen and (max-width: 767.98px) {
+      display: block;
+    }
+  }
+  &.shrink {
+    height: $height-navbar-shrink;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    .menu {
+      &-link {
+        color: $text-title-color;
+      }
+      &-item:hover {
+        .menu-link {
+          color: $pink-light;
+          opacity: 1;
+        }
+      }
+    }
+    .navbar-icon {
+      color: $purple-light;
+      &-bag::after {
+        background-color: $purple-light;
+      }
+    }
+  }
+}
