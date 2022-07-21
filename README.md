@@ -2,9 +2,8 @@
 Gadget Website Using HTML Sass Javascript
 
 ## Live demo
-```
-Official website: https://lamhoang1256.github.io/gadget-landingpage/
-```
+
+Official website: https://lamhoang1256.github.io/gadget-landingpage
 
 ## Author
 - Nguyễn Hoàng Lâm ( [@lamhoang1256](https://github.com/lamhoang1256) )
